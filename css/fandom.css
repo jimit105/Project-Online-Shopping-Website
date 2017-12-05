@@ -1,0 +1,100 @@
+body{
+	background-image: url("../res/background/bg1.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;	
+}
+
+#header{
+position: relative;
+top: 0px;
+
+/*border-top-left-radius: 15px;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;
+border-top-right-radius: 15px;*/
+font-family:'Righteous', 'Agency FB', cursive;
+font-size: 70px;
+padding-left: 23%;
+}
+
+#got{
+width:375px;
+height:350px;
+background-color: #00CC99;
+border-radius: 15px;
+font-family:Verdana;
+font-size:20px;
+text-align:center;
+margin-top: 10px;
+margin-bottom:10px;
+float:left;
+}
+
+#hp{
+width:375px;
+height:350px;
+background-color: #008060;
+border-radius: 15px;
+font-family:Verdana;
+font-size:20px;
+text-align:center;
+margin-top: 10px;
+margin-bottom:10px;
+float: right;
+}
+
+#hg{
+width:375px;
+height:350px;
+background-color: #00CC99;
+border-radius: 15px;
+font-family:Verdana;
+font-size:20px;
+text-align:center;
+margin-top: 10px;
+margin-bottom:10px;
+float:right;
+}
+
+img.circle{
+border-radius: 100px;
+width:200px;
+height:200px;
+position:relative;
+left:25px;
+top:25px;
+}
+
+p{
+	color: black;
+	font-size: 1.4em;
+	padding-top: 1em;		
+}
+#login{
+	float:right;
+}
+
+/* LOGOUT BUTTON STARTS */
+#logoutButton{
+	background-color: #00CC99;
+	min-width: 100px;
+	border: none;
+	padding: 10px;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	color: #FFF;
+	min-height: 15px;
+	font: 12px/15px Arial, Helvetica, sans-serif;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.26);
+	border-radius: 3px;
+}
+#logoutButton:hover{
+	background-color:#44c767;
+	position:relative;
+	top:5px;
+}
+
+/* LOGOUT BUTTON ENDS */

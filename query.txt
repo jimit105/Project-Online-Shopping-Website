@@ -1,0 +1,1 @@
+INSERT INTO `products`(`product_code`, `fandom`, `category`, `product_img_name`, `product_name`, `price`) VALUES ('got-cloth-3','got','clothing','got-cloth-3.jpg','[T-shirt] Hodor',500)

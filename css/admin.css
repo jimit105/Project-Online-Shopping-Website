@@ -1,0 +1,46 @@
+body{
+	background-image: url("../res/background/bg1.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;	
+}
+
+#header{
+position: relative;
+top: 0px;
+font-family:'Bree Serif','Agency FB';
+font-size: 60px;
+padding-left: 30%;
+}
+
+#website{
+width:800px;
+height:150px;
+background-color: #ffc0cb;
+border-radius: 15px;
+font-family: 'Gloria Hallelujah', 'Verdana', cursive;
+font-size:40px;
+text-align:center;
+margin-top: 20px;
+margin-bottom:20px;
+margin-left: 170px;
+opacity: 0.9;
+}
+
+#inventory{
+width:800px;
+height:150px;
+background-color: #00bfff;
+border-radius: 15px;
+font-family: 'Gloria Hallelujah', 'Verdana', cursive;
+font-size:40px;
+text-align:center;
+margin-top: 20px;
+margin-bottom:20px;
+margin-left: 170px;
+opacity: 0.9;
+}
+
+p{
+	color: #36842b;
+}
