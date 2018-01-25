@@ -44,3 +44,27 @@ opacity: 0.9;
 p{
 	color: #36842b;
 }
+
+/* LOGOUT BUTTON STARTS */
+#logoutButton{
+	background-color: #00CC99;
+	min-width: 100px;
+	border: none;
+	padding: 10px;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	color: #FFF;
+	min-height: 15px;
+	font: 12px/15px Arial, Helvetica, sans-serif;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.26);
+	border-radius: 3px;
+}
+#logoutButton:hover{
+	background-color:#44c767;
+	position:relative;
+	top:5px;
+}
+
+/* LOGOUT BUTTON ENDS */

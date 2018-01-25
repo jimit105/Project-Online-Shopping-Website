@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION['username'])){
+	header("Location: index.php");
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,6 +29,12 @@
 	<img src="res/thinkgeek-png.png" width="100%">
 </div>
 
+<div id=login style="float: right;">
+	<a href="destroy.php"><span id="logoutButton">Log Out</span></a><br><br>
+	<?php echo $_SESSION['username'];?>
+</div>
+<br>
+
 <div id="header"> <strong>Select Option</strong> </div>
 
 <table cellspacing="30px" cellpadding="5px">
@@ -43,7 +56,7 @@
 
 	<td>
 	<a href="fandom.php" target="_blank" style="text-decoration: none;">&nbsp;
-	<img src="res/main/new_page.png"></a>
+	<img src="res/main/new_page.png" style="width: 80px;"></a>
 	</td>
 
 
@@ -59,12 +72,12 @@
 	<table>
 	<tr>
 	<td>
-	<a href=".xml" style="text-decoration: none;">&nbsp;
+	<a href="inventory.php" style="text-decoration: none;">&nbsp;
 	<img src="res/main/inventory.png"></a>	
 	</td>
 
 	<td>
-	<a href=".xml" style="text-decoration: none;">
+	<a href="inventory.php" style="text-decoration: none;">
 	<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;View Inventory</strong></p>
 	</a>
 	</td></tr>

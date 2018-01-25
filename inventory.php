@@ -13,7 +13,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 	<title>Inventory | ThinkGeek</title>
 	<link rel="icon" href="res/ThinkGeek-pt.png" sizes="16x16">
 	<link rel="stylesheet" type="text/css" href="css/head.css">
-	<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+	<link rel="stylesheet" type="text/css" href="css/sidebar2.css">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 
 	<link rel="stylesheet" type="text/css" href="css/content.css">
@@ -23,12 +23,11 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 	<style type="text/css">
 		
 		#logo{
-			padding-top: 0.7%;			
-			background-color: #333;
+			padding-top: 0.7%;						
 			width: 14%;
 			height: 62px;
-			float: left;
-			
+			float: left;	
+			position: fixed;		
 		}
 		td{
 			padding: 5px;
@@ -48,9 +47,24 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 <body>
 
 <div id="logo">
-	<a href="fandom.php">
+	<a href="admin.php">
 		<img src="res/thinkgeek-png.png" width="100%">
 	</a>
+</div>
+
+<div id="sidebar">
+	<ul>
+		<li>Welcome <?php echo $_SESSION['username'];?></li>
+				
+		<li>
+			<a href="destroy.php"> 
+			<table><tr><td><img src="res/icons/logout2.png" /></td>
+			<td>&nbsp;Logout</td></tr></table></a>
+		</li>
+
+		<li>&nbsp;</li>
+		
+	</ul>
 </div>
 
 <div id="navbar">

@@ -1,11 +1,9 @@
-
 <?php
 session_start();
 if(!isset($_SESSION['username'])){
 	header("Location: index.php");
 }
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -29,23 +27,14 @@ if(!isset($_SESSION['username'])){
 <div id="logo">
 	<img src="res/thinkgeek-png.png" width="100%">
 </div>
+
 <div id=login>
-
-<span id="logoutButton"><a href="destroy.php"> Log Out </a></span><br><br>
-<?php 
-$conn=mysqli_connect('localhost','root','','online') or die("Cant Connect");
-$uname=$_SESSION['username'];
-$query="SELECT fname FROM users WHERE email='".$uname."'";
-$x=mysqli_query($conn, $query);
-if($x){
-	$final= mysqli_fetch($x);
-  echo $final[0];
-}
-
-?>
+	<a href="destroy.php"><span id="logoutButton">Log Out</span></a><br><br>
+	<?php echo $_SESSION['username'];?>
 </div>
 <br>
-<div id="header"> <strong>Choose Your Fandom</strong> </div>
+
+<div id="header"> <strong>Choose Your Fandom</strong></div>
 
 <table cellspacing="30px" cellpadding="10px">
 <tr>

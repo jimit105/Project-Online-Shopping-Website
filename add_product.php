@@ -14,6 +14,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 	<link rel="icon" href="res/ThinkGeek-pt.png" sizes="16x16">
 	<link rel="stylesheet" type="text/css" href="css/head.css">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/sidebar2.css">
 
 	<link rel="stylesheet" type="text/css" href="css/content.css">
 	<!--BOOTSTRAP-->
@@ -26,9 +27,9 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 		#logo{
 			padding-top: 0.7%;						
 			width: 14%;
-			height: 9.65%;
-			float: left;
-			position: fixed;
+			height: 62px;
+			float: left;	
+			position: fixed;		
 		}
 		#addForm{
 			padding-top: 10px;
@@ -46,6 +47,21 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 	</a>
 </div>
 
+<div id="sidebar">
+	<ul>
+		<li>Welcome <?php echo $_SESSION['username'];?></li>
+				
+		<li>
+			<a href="destroy.php"> 
+			<table><tr><td><img src="res/icons/logout2.png" /></td>
+			<td>&nbsp;Logout</td></tr></table></a>
+		</li>
+
+		<li>&nbsp;</li>
+		
+	</ul>
+</div>
+
 <div id="navbar">
 	<ul>
 		<li><a href="inventory.php">Inventory</a></li>
@@ -61,12 +77,12 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 <!--CONTENT-->
 
 <div class="content" style="color: white;">
-	<section class="container">o
+	<section class="container">
 
 <!-- FORM -->
 <div id="addForm">
 <form name="productForm" method="post" action="add.php">
-<table cellpadding="2px" cellspacing="5px"> 
+<table width="45%"> 
 <tr>
 	<td>&nbsp;</td>
 	<td>&nbsp;</td>
@@ -74,7 +90,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 </tr>
 <tr>
 	<td>
-		<label>Product Code: </label>	
+		<label>Product Code &nbsp;&nbsp;</label>	
 	</td>
 	<td colspan="2">
 		<input type="text" name="product_code" required>
@@ -83,7 +99,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 
 <tr>
 	<td>
-		<label>Fandom: </label>	
+		<label>Fandom &nbsp;&nbsp;</label>	
 	</td>
 	<td colspan="2">
 		<input type="text" name="fandom" required>
@@ -92,7 +108,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 
 <tr>
 	<td>
-		<label>Category: </label>	
+		<label>Category &nbsp;&nbsp;</label>	
 	</td>
 	<td colspan="2">
 		<input type="text" name="category" required>
@@ -101,7 +117,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 
 <tr>
 	<td>
-		<label>Product Name: </label>	
+		<label>Product Name &nbsp;&nbsp;</label>	
 	</td>
 	<td colspan="2">
 		<input type="text" name="product_name" required>
@@ -110,7 +126,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 
 <tr>
 	<td>
-		<label>Price: </label>	
+		<label>Price &nbsp;&nbsp;</label>	
 	</td>
 	<td colspan="2">
 		<input type="text" name="price" required>
@@ -119,7 +135,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 
 <tr>
 	<td>
-		<label>Quantity </label>	
+		<label>Quantity &nbsp;&nbsp;</label>	
 	</td>
 	<td colspan="2">
 		<input type="text" name="product_qty" required>

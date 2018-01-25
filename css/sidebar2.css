@@ -1,0 +1,36 @@
+#sidebar ul {    
+    margin: 0;
+    padding: 0;
+    width: 14%;    
+    position: fixed;
+    height: 100%;    
+    font-size: 15px;
+    margin-top: 5%;
+}
+
+#sidebar li {
+    display: block;
+    color: #fff;
+    padding: 8px 8px;
+    text-decoration: none;
+}
+
+#sidebar li a {
+    display: block;
+    color: #fff;
+    padding: 8px 0px;
+    text-decoration: none;
+}
+
+
+
+#sidebar li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#sidebar li a:hover:not(.active) {
+    /*background-color: #555;*/
+    background-color: #73e567;
+    color: white;
+}

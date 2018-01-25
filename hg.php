@@ -46,8 +46,8 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 
 <div id="sidebar">
 	<ul>
-		<li>Welcome</li>
-
+		<li>Welcome <?php echo $_SESSION['username'];?></li>
+		
 		<li><a href="#cart"><table><tr><td><img src="res/icons/cart.png" /></td>
 		<td>&nbsp;Shopping Cart</td></tr></table></a></li>
 		
@@ -58,16 +58,21 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 		<td>&nbsp;Accessories</td></tr></table></a></li>
 
 		<li><a href="#sou"><table><tr><td><img src="res/icons/souvenir.png" /></td>
-		<td>&nbsp;Souvenir</td></tr></table></a></li>
+		<td>&nbsp;Souvenir</td></tr></table></a></li>		
+
 		<li>&nbsp;</li>
 
 		<li><a href="view_cart.php"><table><tr><td><img src="res/icons/checkout.png" /></td>
 		<td>&nbsp;Checkout&nbsp;</td><td><img src="res/icons/new_page.png" /></td></tr></table></a></li>
 
+		<li>
+			<a href="destroy.php"> 
+			<table><tr><td><img src="res/icons/logout.png" /></td>
+			<td>&nbsp;Logout</td></tr></table></a>
+		</li>
+
 		<li>&nbsp;</li>
-		<li><table><tr><td><img src="res/icons/chat.png" /></td>
-		<td>&nbsp;Chat Box&nbsp;</td><td><img src="res/icons/new_page.png" /></td></tr></table></li>
-		
+				
 		<li><a href="https://goo.gl/forms/jhAHet2TLLPIOQff1" target="_blank"><table><tr><td><img src="res/icons/request.png" /></td>
 		<td>&nbsp;Request Here&nbsp;</td><td><img src="res/icons/new_page.png" /></td></tr></table></a></li>
 	</ul>

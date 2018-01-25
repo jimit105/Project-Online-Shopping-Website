@@ -7,7 +7,7 @@
 	
 $sql = "DELETE FROM products WHERE product_code='".$code."'"; 
 
-if (mysqli_query($msqli, $sql)) 
+if (mysqli_query($mysqli, $sql)) 
 {
 	echo '<script type="text/javascript">alert("Product Deleted");</script>';
 	header("Location:http://localhost/JIU/remove_product.php");

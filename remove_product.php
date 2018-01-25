@@ -14,6 +14,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 	<link rel="icon" href="res/ThinkGeek-pt.png" sizes="16x16">
 	<link rel="stylesheet" type="text/css" href="css/head.css">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/sidebar2.css">
 
 	<link rel="stylesheet" type="text/css" href="css/content.css">
 	<!--BOOTSTRAP-->
@@ -26,8 +27,8 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 		#logo{
 			padding-top: 0.7%;						
 			width: 14%;
-			height: 9.65%;
-			float: left;
+			height: 62px;
+			float: left;			
 			position: fixed;
 		}
 		#addForm{
@@ -44,6 +45,21 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 	<a href="admin.php">
 		<img src="res/thinkgeek-png.png" width="100%">
 	</a>
+</div>
+
+<div id="sidebar">
+	<ul>
+		<li>Welcome <?php echo $_SESSION['username'];?></li>
+				
+		<li>
+			<a href="destroy.php"> 
+			<table><tr><td><img src="res/icons/logout2.png" /></td>
+			<td>&nbsp;Logout</td></tr></table></a>
+		</li>
+
+		<li>&nbsp;</li>
+		
+	</ul>
 </div>
 
 <div id="navbar">
@@ -66,7 +82,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 <!-- FORM -->
 <div id="addForm">
 <form name="productForm" method="post" action="delete.php">
-<table cellpadding="2px" cellspacing="5px"> 
+<table width="45%"> 
 <tr>
 	<td>&nbsp;</td>
 	<td>&nbsp;</td>
@@ -74,7 +90,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 </tr>
 <tr>
 	<td>
-		<label>Product Code: </label>	
+		<label>Product Code &nbsp;&nbsp;</label>	
 	</td>
 	<td colspan="2">
 		<input type="text" name="product_code" required>

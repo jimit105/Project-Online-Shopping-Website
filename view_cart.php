@@ -19,6 +19,16 @@ include_once("config.php");
 			margin-left: 2px;
 		}
 </style>
+
+<script type="text/javascript">
+	function checkoutFunction(){
+		
+		
+		alert("Your Order Has Been Placed!");
+		window.location.assign("fandom.php");
+
+	}
+</script>
 </head>
 <body>
 
@@ -28,8 +38,9 @@ include_once("config.php");
 	</a>
 </div>
 
-<h1 align="center" style="color:white;">View Cart</h1>
+<h1 align="center" style="color:white;">Shopping Cart</h1>
 <div class="cart-view-table-back">
+
 <form method="post" action="cart_update.php">
 <table width="100%"  cellpadding="6" cellspacing="0"><thead><tr><th>Quantity</th><th>Fandom</th><th>Category</th><th>Name</th><th>Price</th><th>Subtotal</th><th>Remove</th></tr></thead>
   <tbody>
@@ -65,8 +76,20 @@ include_once("config.php");
 		
 	}
     ?>
-    <tr><td colspan="5"><span style="float:right;text-align: right;">Amount Payable : <?php echo sprintf("%01.2f", $total);?></span></td></tr>
-    <tr><td colspan="5"><a href="fandom.php" class="button">Add More Items</a><button type="submit">Update</button></td></tr>
+    <tr><td colspan="7">&nbsp;</td></tr>
+    <tr><td colspan="6"><span style="float:right;text-align: right;">Amount Payable: &#8377; <?php echo sprintf("%01.2f", $total);?></span></td></tr>
+
+    <tr>
+    	<td colspan="4"><a href="fandom.php" class="button">Add More Items</a></td>
+    	<td><button type="submit">Update</button></td>
+
+    	
+    	<td><input type="button" onclick="checkoutFunction();" value="Checkout" id="checkoutButton"/></td>
+    
+
+    </tr>
+
+
   </tbody>
 </table>
 <input type="hidden" name="return_url" value="<?php 
