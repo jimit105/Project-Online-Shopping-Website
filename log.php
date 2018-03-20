@@ -27,7 +27,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
 if(isset($_SESSION['username'])){
 
 	$uname=$_SESSION['username'];
-	if($uname=='admin@somaiya.edu'){
+	if($uname=='admin@example.com'){
 	header("Location: admin.php");
 	}
 	else
